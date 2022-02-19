@@ -1,4 +1,4 @@
-use clap::{arg, App};
+use clap::{arg, Command};
 
 fn main() {
     let args = args().get_matches();
@@ -57,8 +57,8 @@ fn main() {
     }
 }
 
-fn args() -> App<'static> {
-    App::new("crabsay")
+fn args() -> Command<'static> {
+    Command::new("crabsay")
         .version("0.1.0")
         .author("EdenQwQ <lsahlm1eden@gmail.com>")
         .about("Cowsay rewriten in Rust but with Ferris")
